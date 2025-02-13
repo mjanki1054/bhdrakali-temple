@@ -7,6 +7,16 @@ body {
     
   }
 
+  .heading-text {
+    font-size: 1.5rem;
+  }
+  
+  /* Font size for large screens */
+  @media (min-width: 768px) {
+    .heading-text {
+      font-size: 28px;
+    }
+  }
   .header {
     background-image: url('./Banner-bg.jpg');
     color: white;
