@@ -14,9 +14,45 @@ body {
   /* Font size for large screens */
   @media (min-width: 768px) {
     .heading-text {
-      font-size: 28px;
+      font-size: 24px;
     }
   }
+
+  /**/
+  .left-image, .right-images, .small-screen-image {
+    display: none;
+  }
+
+  /* For screens wider than 990px */
+  @media (min-width: 990px) {
+    .left-image, .right-images {
+      display: flex !important;
+    }
+    .small-screen-image {
+      display: none !important;
+    }
+  }
+
+  /* For screens between 750px and 990px */
+  @media (max-width: 989px) and (min-width: 766px) {
+    .left-image {
+      display: flex !important;
+    }
+    .right-images, .small-screen-image {
+      display: none !important;
+    }
+  }
+
+  /* For screens narrower than 750px */
+  @media (max-width: 764px) {
+    .left-image, .right-images, .small-screen-image {
+      display: none !important;
+    }
+  }
+
+  /**/
+
+
   .header {
     background-image: url('./Banner-bg.jpg');
     color: white;
