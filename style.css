@@ -159,14 +159,3 @@ body {
     font-style: normal;
   }
   
-
-  @font-face {
-    font-family: 'KrutiDev';
-    src: url('./fonts/KrutiDev.ttf') format('truetype');
-}
-
-.table-custom {
-    font-family: 'KrutiDev', serif;
-    font-size: 14px;
-}
-
