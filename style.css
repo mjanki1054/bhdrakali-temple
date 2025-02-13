@@ -1,5 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+
 body {
     background-color:white;
     font-family: sans-serif;
@@ -49,6 +52,20 @@ body {
       display: none !important;
     }
   }
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Media query for screens below 530px */
+@media (max-width: 530px) {
+    .table-responsive {
+        overflow-x: scroll;
+    }
+    table {
+        min-width: 530px; /* Ensures the table doesn't shrink below this width */
+    }
+}
 
   /**/
 
@@ -108,3 +125,48 @@ body {
     height: 10px;
     margin: 10px auto;
   }
+
+
+  /*Hindi font*/
+
+  .hind-light {
+    font-family: "Hind", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .hind-regular {
+    font-family: "Hind", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hind-medium {
+    font-family: "Hind", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .hind-semibold {
+    font-family: "Hind", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .hind-bold {
+    font-family: "Hind", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+  @font-face {
+    font-family: 'KrutiDev';
+    src: url('./fonts/KrutiDev.ttf') format('truetype');
+}
+
+.table-custom {
+    font-family: 'KrutiDev', serif;
+    font-size: 14px;
+}
+
