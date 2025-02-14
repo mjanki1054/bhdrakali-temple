@@ -46,16 +46,35 @@ body {
     }
   }
 
-  /* For screens narrower than 750px */
-  @media (max-width: 764px) {
-    .left-image, .right-images, .small-screen-image {
-      display: none !important;
-    }
-  }
-  .table-responsive {
-    width: 100%;
-    overflow-x: auto;
+/* General fixes for alignment */
+.left-image {
+  justify-content: start; /* Ensure the Jharkhand logo aligns to the left on larger screens */
 }
+.right-images {
+  display: none; /* Default: Hide right images */
+}
+
+/* Adjust logo and text for small screens */
+@media (max-width: 764px) {
+  .left-image {
+    display: flex !important;       /* Ensure the left image is visible */
+    justify-content: center !important; /* Center-align the logo on small screens */
+  }
+  .right-images {
+    display: none !important;       /* Hide right-side images */
+  }
+  
+}
+
+/* Medium to large screens adjustments */
+@media (min-width: 765px) {
+  .jharkhand-logo {
+    max-height: 100px; /* Larger size for medium and above screens */
+    max-width: 100px;
+  }
+}
+
+
 
 /* Media query for screens below 530px */
 @media (max-width: 530px) {
